@@ -1,0 +1,23 @@
+{
+  "name": "noreowfs",
+  "version": "1.0.0",
+  "description": "Node-Red nodes for OWFS server (owserver)",
+  "main": "owfs-read.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nidayand/noreowfs.git"
+  },
+  "keywords": [
+    "node-red",
+    "owfs"
+  ],
+  "author": "nidayand",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/nidayand/noreowfs/issues"
+  },
+  "homepage": "https://github.com/nidayand/noreowfs#readme"
+}
