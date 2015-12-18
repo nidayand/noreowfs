@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/nidayand/noreowfs#readme",
   "dependencies": {
+    "mqtt": "^1.6.1",
     "owfs": "^0.2.3"
   }
 }
