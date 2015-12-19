@@ -1,6 +1,6 @@
 noreowfs
 =========
-Node-Red node to be specifying the path get the value from a device.
+A Node-Red node to get the value from a 1-wire device through the owserver API.
 
 Install
 -------
