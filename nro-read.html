@@ -19,6 +19,7 @@
 <script type="text/x-red" data-help-name="nro-read out">
     <p>Configure the owserver connection details in <b>Config</b> and the path to read under <b>Read path</b>. E.g. Config: localhost:4304 and Read path: /1F.D76E08000000/aux/20.EF2914000000/volt.A</p>
     <p>It will query the owserver and simply return the current value</p>
+    <p>If a path is not specified it will use <b>msg.topic</b> as the value to request</p>
 </script>
 <script type="text/javascript">
 
@@ -27,7 +28,7 @@
         color: "#E2D96E",
         defaults: {
             config: {type: "nro-config", required: true},
-            path: {value: "", required: true},
+            path: {value: "", required: false},
             name: {value: "", required: true}
         },
         inputs: 1,

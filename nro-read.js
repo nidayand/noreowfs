@@ -15,6 +15,9 @@ module.exports = function (RED) {
         this.path = n.path;
         var self = this;
 
+        //Check if a path is specified
+        self.pathspecified = (self.path.trim().length > 0);
+
         //Setup connection
         self.client = owfs.Client;
         self.con = new self.client(self.host, self.port);
@@ -22,7 +25,8 @@ module.exports = function (RED) {
         //On connection read
         self.on("input", function (msg) {
             common.setStatus(self, 1, "Requesting value");
-            self.con.read(self.path, function (err, result) {
+
+            self.con.read((self.pathspecified ? self.path : msg.topic), function (err, result) {
                 if (!err) {
                     msg.payload = result;
                     self.send(msg);
