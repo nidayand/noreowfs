@@ -21,12 +21,12 @@
     },
     "homepage": "https://github.com/nidayand/noreowfs#readme",
     "dependencies": {
-        "owfs": "^0.2.3",
+        "owfs": "^0.2.3"
     },
     "node-red": {
         "nodes": {
             "nro-config": "nro-config.js",
-            "nro-read out" : "nro-read.js"
+            "nro-read out": "nro-read.js"
         }
     }
 }
