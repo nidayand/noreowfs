@@ -1,27 +1,32 @@
 {
-  "name": "noreowfs",
-  "version": "1.0.0",
-  "description": "A script to read owserver and post the status of the 1-wire devices onto an MQTT broker",
-  "main": "owfs-read.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nidayand/noreowfs.git"
-  },
-  "keywords": [
+    "name": "noreowfs",
+    "version": "1.0.0",
+    "description": "Node-Red nodes to interact with the owserver API.",
+    "main": "owfs-read.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nidayand/noreowfs.git"
+    },
+    "keywords": [
     "node-red",
     "owfs"
   ],
-  "author": "nidayand",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/nidayand/noreowfs/issues"
-  },
-  "homepage": "https://github.com/nidayand/noreowfs#readme",
-  "dependencies": {
-    "mqtt": "^1.6.1",
-    "owfs": "^0.2.3"
-  }
+    "author": "nidayand",
+    "license": "Apache-2.0",
+    "bugs": {
+        "url": "https://github.com/nidayand/noreowfs/issues"
+    },
+    "homepage": "https://github.com/nidayand/noreowfs#readme",
+    "dependencies": {
+        "owfs": "^0.2.3",
+    },
+    "node-red": {
+        "nodes": {
+            "nro-config": "nro-config.js",
+            "nro-read out" : "nro-read.js"
+        }
+    }
 }
