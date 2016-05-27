@@ -28,7 +28,7 @@ module.exports = function (RED) {
 
             self.con.read((self.pathspecified ? self.path : msg.topic), function (err, result) {
                 if (!err) {
-                    msg.payload = result;
+                    msg.payload = result.replace(/\0/g, '');
                     self.send(msg);
                     common.clearStatus(self);
                 } else {
