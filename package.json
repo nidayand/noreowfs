@@ -1,6 +1,6 @@
 {
   "name": "noreowfs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Node-Red nodes to interact with the owserver API.",
   "main": "owfs-read.js",
   "scripts": {
